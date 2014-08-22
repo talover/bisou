@@ -15,7 +15,7 @@ html {
 	line-height: 1.4;
 }
 html, body {
-	height: 100%;
+	min-height: 100%;
 }
 
 body {
@@ -1462,21 +1462,26 @@ h4 {
 }// END .product
 
 
-.new_ico {
-	background: #fc3938;
-	.border-radius(100%);
-	width: 40px;
-	height: 40px;
-	line-height: 40px;
-	text-align: center;
-	color: #fff;
-	font-family: 'kelson_sans_bold';
-	margin: 0;
-	text-transform: uppercase;
-	font-size: 10pt;
+/*===============================CATALOGUE============================*/
+.icon-clock {
+	.sprite;
+	.sprite-20;
+	margin-right: 8px;
+	display: inline-block;
+}
+.icon-mail {
+	.sprite;
+	.sprite-19;
+	margin-right: 8px;
+	display: inline-block;
+}
+.icon-phone {
+	.sprite;
+	.sprite-18;
+	margin-right: 3px;
+	display: inline-block;
 }
 
-/*===============================CATALOGUE============================*/
 .round_icon {
 	.border-radius(100%);
 	width: 40px;
@@ -1497,5 +1502,94 @@ h4 {
 	}
 	&.green {
 		background: #690;
+	}
+}
+
+.cat-nav {
+	background: #fff;
+	padding: 20px 20px;
+	color: #000;
+
+	li {
+		font-size: 11pt;
+		padding: .3em 0;
+
+		&:first-child {
+			padding-top: 0;
+		}
+		&:last-child {
+			padding-bottom: 0;
+		}
+
+		&.nav-title {
+			font-size: 15pt;
+			padding: 1em 0 .6em;
+
+			&:first-child {
+				padding-top: 0;
+			}
+		}
+		a {
+			text-decoration: underline;
+			color: #000;
+
+			&:hover {
+				text-decoration: none;
+				color: #fc3938;
+			}
+		}
+		span {
+			color: #aaa;
+			padding-left: 3px;
+		}
+	}
+}//.cat-nav
+
+.shop-info {
+	background: #fc3938;
+	padding: 20px 10px 20px 20px;
+	margin-top: 10px;
+	color: #fff;
+	font-size: 14pt;
+
+	div {
+		font-size: 15pt;
+		margin-top: 1em;
+
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+
+	p {
+		margin-bottom: 0;
+	}
+
+	a {
+		color: #fff;
+		text-decoration: underline;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+
+	address {
+		line-height: 1.75em;
+		p {
+			i{
+				vertical-align: text-top;
+				margin-top: 8px;
+			}
+
+			span {
+				display: inline-block;
+				vertical-align: text-top;
+				font-size: 11pt;
+			}
+						
+		}
+		
+		
 	}
 }
