@@ -8,8 +8,9 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<title>bisou</title>
 		<meta name="description" content="">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+		
+		<link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/bootstrap-theme.min.css">
 		<link rel="stylesheet" href="css/main.css">
@@ -24,12 +25,19 @@
 		<!--[if lt IE 7]>
 			<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 		<![endif]-->
+		<!--[if gte IE 9]>
+			<style type="text/css">
+				.gradient {
+					filter: none;
+				}
+			</style>
+		<![endif]-->
 
 		<div id="main">
 			<header id="header">
 				<div class="container">
 					<div class="row">
-						<div class="col-md-9 col-sm-9">
+						<div class="col-md-9 col-sm-9 col-xs-9">
 							<div class="info-block">
 								<ul>
 									<li>+38 (067) 840 33 44</li>
@@ -60,7 +68,7 @@
 								</ul>
 							</nav>
 						</div>
-						<div class="col-md-3 col-sm-3">
+						<div class="col-md-3 col-sm-3 col-xs-3">
 							<p class="busket">
 								<i></i>
 								<a href="#">5 товаров</a>
@@ -82,9 +90,7 @@
 			<section id="main-slider">
 				<div class="container">
 					<div class="slide-info">
-						<p>Новая коллекция</p>
-						<h3> осень  -  зима </h3>
-						<span>2014</span>
+						
 					</div>
 				</div>
 				<div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
@@ -95,9 +101,36 @@
 					</ol>
 					<!-- Carousel items -->
 					<div class="carousel-inner">
-						<div class="active item" style="background-image:url(img/pic_1.png)"></div>
-						<div class="item" style="background-image:url(img/pic_1.png)"></div>
-						<div class="item" style="background-image:url(img/pic_1.png)"></div>
+
+						<div class="active item" style="background-image:url(img/pic_1.png)">
+							<div class="container">							
+								<div class="carousel-caption">
+									<p>Новая коллекция</p>
+									<h3> осень  -  зима </h3>
+									<span>2012</span>
+								</div>
+							</div>
+						</div>
+						
+						<div class="item" style="background-image:url(img/pic_1.png)">
+							<div class="container">							
+								<div class="carousel-caption">
+									<p>Новая коллекция</p>
+									<h3> осень  -  зима </h3>
+									<span>2013</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="item" style="background-image:url(img/pic_1.png)">
+							<div class="container">							
+								<div class="carousel-caption">
+									<p>Новая коллекция</p>
+									<h3> осень  -  зима </h3>
+									<span>2014</span>
+								</div>
+							</div>
+						</div>
 					</div>
 					<!-- Carousel nav -->
 					<a class="carousel-control left" href="#carousel" data-slide="prev">&lsaquo;</a>
@@ -167,7 +200,7 @@
 								<p><a href="#">Скачать каталог</a></p>
 							</div>
 						</li>
-						<li>
+						<li class="payment">
 
 							<div class="cont">
 								<h3><span>2. </span>Оплата<i></i></h3>
@@ -194,7 +227,7 @@
 								</p>
 							</div>
 						</li>
-						<li>
+						<li class="delivery">
 
 							<div class="cont">
 								<h3><span>3. </span>Доставка</h3>
@@ -232,7 +265,7 @@
 					</ul>
 
 					<div class="tab-content">
-						<div class="tab-pane active" id="new">
+						<div class="tab-pane clearfix active" id="new">
 							<div id="new-stuff" class="carousel slide" data-ride="carousel">
 								
 								<div class="carousel-inner">
@@ -243,8 +276,8 @@
 												<span>Туника 367 с принтом классных бабочек</span>
 											</a>
 											<div class="price">350 грн.</div>
-											<div class="visuallyhidden">
-												<a class="red-btn" href="">В корзину</a>
+											<div class="btn-hidden">
+												<a class="red-btn gradient" href="">В корзину</a>
 											</div>
 										</div>
 										<div class="cloth-item">
@@ -253,8 +286,8 @@
 												<span>Туника 367 с принтом классных бабочек</span>
 											</a>
 											<div class="price">350 грн.</div>
-											<div class="visuallyhidden">
-												<a class="red-btn" href="">В корзину</a>
+											<div class="btn-hidden">
+												<a class="red-btn gradient" href="">В корзину</a>
 											</div>
 										</div>
 										<div class="cloth-item">
@@ -263,8 +296,8 @@
 												<span>Туника 367 с принтом классных бабочек</span>
 											</a>
 											<div class="price">350 грн.</div>
-											<div class="visuallyhidden">
-												<a class="red-btn" href="">В корзину</a>
+											<div class="btn-hidden">
+												<a class="red-btn gradient" href="">В корзину</a>
 											</div>
 										</div>
 										<div class="cloth-item">
@@ -273,50 +306,8 @@
 												<span>Туника 367 с принтом классных бабочек</span>
 											</a>
 											<div class="price">350 грн.</div>
-											<div class="visuallyhidden">
-												<a class="red-btn" href="">В корзину</a>
-											</div>
-										</div>
-									</div> <!-- .item -->
-									<div class="item">
-										<div class="cloth-item">
-											<a class="img-wrap" href="">
-												<img src="img/item1.jpg" alt="">
-												<span>Туника 367 с принтом классных бабочек</span>
-											</a>
-											<div class="price">350 грн.</div>
-											<div class="visuallyhidden">
-												<a class="red-btn" href="">В корзину</a>
-											</div>
-										</div>
-										<div class="cloth-item">
-											<a class="img-wrap" href="">
-												<img src="img/item1.jpg" alt="">
-												<span>Туника 367 с принтом классных бабочек</span>
-											</a>
-											<div class="price">350 грн.</div>
-											<div class="visuallyhidden">
-												<a class="red-btn" href="">В корзину</a>
-											</div>
-										</div>
-										<div class="cloth-item">
-											<a class="img-wrap" href="">
-												<img src="img/item1.jpg" alt="">
-												<span>Туника 367 с принтом классных бабочек</span>
-											</a>
-											<div class="price">350 грн.</div>
-											<div class="visuallyhidden">
-												<a class="red-btn" href="">В корзину</a>
-											</div>
-										</div>
-										<div class="cloth-item">
-											<a class="img-wrap" href="">
-												<img src="img/item1.jpg" alt="">
-												<span>Туника 367 с принтом классных бабочек</span>
-											</a>
-											<div class="price">350 грн.</div>
-											<div class="visuallyhidden">
-												<a class="red-btn" href="">В корзину</a>
+											<div class="btn-hidden">
+												<a class="red-btn gradient" href="">В корзину</a>
 											</div>
 										</div>
 									</div> <!-- .item -->
@@ -327,8 +318,8 @@
 												<span>Туника 367 с принтом классных бабочек</span>
 											</a>
 											<div class="price">350 грн.</div>
-											<div class="visuallyhidden">
-												<a class="red-btn" href="">В корзину</a>
+											<div class="btn-hidden">
+												<a class="red-btn gradient" href="">В корзину</a>
 											</div>
 										</div>
 										<div class="cloth-item">
@@ -337,8 +328,8 @@
 												<span>Туника 367 с принтом классных бабочек</span>
 											</a>
 											<div class="price">350 грн.</div>
-											<div class="visuallyhidden">
-												<a class="red-btn" href="">В корзину</a>
+											<div class="btn-hidden">
+												<a class="red-btn gradient" href="">В корзину</a>
 											</div>
 										</div>
 										<div class="cloth-item">
@@ -347,8 +338,8 @@
 												<span>Туника 367 с принтом классных бабочек</span>
 											</a>
 											<div class="price">350 грн.</div>
-											<div class="visuallyhidden">
-												<a class="red-btn" href="">В корзину</a>
+											<div class="btn-hidden">
+												<a class="red-btn gradient" href="">В корзину</a>
 											</div>
 										</div>
 										<div class="cloth-item">
@@ -357,8 +348,8 @@
 												<span>Туника 367 с принтом классных бабочек</span>
 											</a>
 											<div class="price">350 грн.</div>
-											<div class="visuallyhidden">
-												<a class="red-btn" href="">В корзину</a>
+											<div class="btn-hidden">
+												<a class="red-btn gradient" href="">В корзину</a>
 											</div>
 										</div>
 									</div> <!-- .item -->
@@ -369,8 +360,8 @@
 												<span>Туника 367 с принтом классных бабочек</span>
 											</a>
 											<div class="price">350 грн.</div>
-											<div class="visuallyhidden">
-												<a class="red-btn" href="">В корзину</a>
+											<div class="btn-hidden">
+												<a class="red-btn gradient" href="">В корзину</a>
 											</div>
 										</div>
 										<div class="cloth-item">
@@ -379,8 +370,8 @@
 												<span>Туника 367 с принтом классных бабочек</span>
 											</a>
 											<div class="price">350 грн.</div>
-											<div class="visuallyhidden">
-												<a class="red-btn" href="">В корзину</a>
+											<div class="btn-hidden">
+												<a class="red-btn gradient" href="">В корзину</a>
 											</div>
 										</div>
 										<div class="cloth-item">
@@ -389,8 +380,8 @@
 												<span>Туника 367 с принтом классных бабочек</span>
 											</a>
 											<div class="price">350 грн.</div>
-											<div class="visuallyhidden">
-												<a class="red-btn" href="">В корзину</a>
+											<div class="btn-hidden">
+												<a class="red-btn gradient" href="">В корзину</a>
 											</div>
 										</div>
 										<div class="cloth-item">
@@ -399,8 +390,50 @@
 												<span>Туника 367 с принтом классных бабочек</span>
 											</a>
 											<div class="price">350 грн.</div>
-											<div class="visuallyhidden">
-												<a class="red-btn" href="">В корзину</a>
+											<div class="btn-hidden">
+												<a class="red-btn gradient" href="">В корзину</a>
+											</div>
+										</div>
+									</div> <!-- .item -->
+									<div class="item">
+										<div class="cloth-item">
+											<a class="img-wrap" href="">
+												<img src="img/item1.jpg" alt="">
+												<span>Туника 367 с принтом классных бабочек</span>
+											</a>
+											<div class="price">350 грн.</div>
+											<div class="btn-hidden">
+												<a class="red-btn gradient" href="">В корзину</a>
+											</div>
+										</div>
+										<div class="cloth-item">
+											<a class="img-wrap" href="">
+												<img src="img/item1.jpg" alt="">
+												<span>Туника 367 с принтом классных бабочек</span>
+											</a>
+											<div class="price">350 грн.</div>
+											<div class="btn-hidden">
+												<a class="red-btn gradient" href="">В корзину</a>
+											</div>
+										</div>
+										<div class="cloth-item">
+											<a class="img-wrap" href="">
+												<img src="img/item1.jpg" alt="">
+												<span>Туника 367 с принтом классных бабочек</span>
+											</a>
+											<div class="price">350 грн.</div>
+											<div class="btn-hidden">
+												<a class="red-btn gradient" href="">В корзину</a>
+											</div>
+										</div>
+										<div class="cloth-item">
+											<a class="img-wrap" href="">
+												<img src="img/item1.jpg" alt="">
+												<span>Туника 367 с принтом классных бабочек</span>
+											</a>
+											<div class="price">350 грн.</div>
+											<div class="btn-hidden">
+												<a class="red-btn gradient" href="">В корзину</a>
 											</div>
 										</div>
 									</div> <!-- .item -->
@@ -424,12 +457,12 @@
 			<article>
 				<div class="container">
 					<div class="row">
-						<div class="col-md-9">
+						<div class="col-md-9 col-sm-9 col-xs-9">
 							<h1>О нашем магазине</h1>
 							<p>Мы — мультибрендовая сеть магазинов стильной итальянской одежды в Москве, которая делает вас современной и модной в офисе и за его пределами. На сегодняшний день сеть насчитывает семь магазинов в крупнейших торговых центрах Москвы, а также интернет-магазин.</p>
 							<p>Наша одежда в меру консервативна, в меру креативна,  оригинальна... но всегда стильная и всегда высочайшего качества. Неважно, где вы работаете — в банке или в дизайнерском бюро — в магазинах вы всегда подберёте костюм или платье, которое подчеркнёт вашу женственность и ваш уникальный стиль.</p>
 						</div>
-						<div class="col-md-3">
+						<div class="col-md-3 col-sm-3 col-xs-3">
 							<img src="img/contact.jpg" alt="">
 						</div>
 					</div>
@@ -440,7 +473,7 @@
 		<footer id="site-footer">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-2">
+					<div class="col-md-2 col-sm-2 col-xs-2">
 						<h4>Покупателям</h4>
 						<ul>
 							<li><a href="">Таблица размеров</a></li>
@@ -450,7 +483,7 @@
 							<li><a href="">Вопросы и ответы</a></li>
 						</ul>
 					</div><!--.col-md-2-->
-					<div class="col-md-2">
+					<div class="col-md-2 col-sm-2 col-xs-2">
 						<h4>О магазине</h4>
 						<ul>
 							<li><a href="">О нас</a></li>
@@ -462,7 +495,7 @@
 							<li><a href="">Сотрудничество</a></li>
 						</ul>
 					</div><!--.col-md-2-->
-					<div class="col-md-2">
+					<div class="col-md-2 col-sm-2 col-xs-2">
 						<h4>Контакты</h4>
 						<address>
 							<span><a href="">info@bisou.com.ua</a></span>
@@ -470,20 +503,22 @@
 							<span>+38 (067) 840 33 44</span>
 							<span>+38 (067) 840 33 44</span>
 						</address>
+						<ul>
+						</ul>
 						<div class="socials">
-							<div class="fb"><img src="img/fb.png" alt=""></div>
-							<div class="vk"><img src="img/vk.png" alt=""></div>
-							<div class="tw"><img src="img/tw.png" alt=""></div>
-							<div class="ph"><img src="img/ph.png" alt=""></div>
+							<li class="fb"><a href="#"><i></i></a></li>
+							<li class="vk"><a href="#"><i></i></a></li>
+							<li class="tw"><a href="#"><i></i></a></li>
+							<li class="ph"><a href="#"><i></i></a></li>
 						</div>
 					</div><!--.col-md-2-->
-					<div class="col-md-4 pull-right">
+					<div class="col-md-4 col-sm-4 col-xs-4 pull-right">
 						<p class="copyright">© Женская одежда Bisou , 2014</p>
 						<p>В наших магазинах всегда представлен широкий ассортимент платьев, кофт, блузок, а также жакетов и деловых костюмов, которые разнообразят ваш гардероб. Если вам нужен менее строгий и менее классический стиль, рекомендуем  мягкий трикотаж, к которому юбки или брюки предлагаются отдельно от костюма. </p>
 					</div><!--.col-md-4-->
 				</div><!--.row-->
 				<div class="row">
-					<div class="col-md-3">
+					<div class="col-md-3 col-sm-3 col-xs-3">
 						<p class="copyright">Создание сайта - <a href="">NextWeb</a></p>
 					</div>
 				</div><!--.row-->
