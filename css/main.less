@@ -197,29 +197,31 @@ a,button,input {outline: 0;}
 .sprite-13 {.stitches-sprite(-5px, -109px, 26px, 26px);}
 .sprite-14 {.stitches-sprite(-41px, -109px, 26px, 26px);}
 .sprite-15 {.stitches-sprite(-77px, -109px, 26px, 26px);}
-.sprite-16 {.stitches-sprite(-113px, -109px, 16px, 15px);}
-.sprite-17 {.stitches-sprite(-189px, -5px, 7px, 7px);}
-.sprite-18 {.stitches-sprite(-139px, -109px, 16px, 16px);}
-.sprite-19 {.stitches-sprite(-165px, -109px, 16px, 12px);}
-.sprite-2 {.stitches-sprite(-165px, -131px, 16px, 16px);}
-.sprite-20 {.stitches-sprite(-5px, -157px, 16px, 16px);}
-.sprite-21 {.stitches-sprite(-31px, -157px, 23px, 7px);}
-.sprite-22 {.stitches-sprite(-64px, -157px, 20px, 21px);}
-.sprite-23 {.stitches-sprite(-94px, -157px, 12px, 8px);}
-.sprite-24 {.stitches-sprite(-116px, -157px, 12px, 8px);}
-.sprite-25 {.stitches-sprite(-138px, -157px, 14px, 16px);}
-.sprite-26 {.stitches-sprite(-162px, -157px, 26px, 26px);}
-.sprite-27 {.stitches-sprite(-206px, -5px, 26px, 26px);}
-.sprite-28 {.stitches-sprite(-191px, -41px, 26px, 26px);}
-.sprite-29 {.stitches-sprite(-191px, -77px, 26px, 26px);}
-.sprite-3 {.stitches-sprite(-191px, -113px, 17px, 24px);}
-.sprite-30 {.stitches-sprite(-218px, -113px, 12px, 10px);}
-.sprite-4 {.stitches-sprite(-198px, -147px, 16px, 12px);}
-.sprite-5 {.stitches-sprite(-198px, -169px, 11px, 14px);}
-.sprite-6 {.stitches-sprite(-224px, -133px, 9px, 27px);}
-.sprite-7 {.stitches-sprite(-5px, -193px, 70px, 13px);}
-.sprite-8 {.stitches-sprite(-85px, -193px, 40px, 40px);}
-.sprite-9 {.stitches-sprite(-135px, -193px, 35px, 40px);}
+.sprite-16 {.stitches-sprite(-189px, -5px, 16px, 15px);}
+.sprite-17 {.stitches-sprite(-189px, -30px, 7px, 7px);}
+.sprite-18 {.stitches-sprite(-189px, -47px, 16px, 16px);}
+.sprite-19 {.stitches-sprite(-113px, -109px, 16px, 12px);}
+.sprite-2 {.stitches-sprite(-139px, -109px, 16px, 16px);}
+.sprite-20 {.stitches-sprite(-165px, -109px, 16px, 16px);}
+.sprite-21 {.stitches-sprite(-113px, -135px, 23px, 7px);}
+.sprite-22 {.stitches-sprite(-146px, -135px, 20px, 21px);}
+.sprite-23 {.stitches-sprite(-191px, -73px, 12px, 8px);}
+.sprite-24 {.stitches-sprite(-5px, -91px, 12px, 8px);}
+.sprite-25 {.stitches-sprite(-191px, -91px, 14px, 16px);}
+.sprite-26 {.stitches-sprite(-176px, -135px, 26px, 26px);}
+.sprite-27 {.stitches-sprite(-5px, -171px, 26px, 26px);}
+.sprite-28 {.stitches-sprite(-41px, -171px, 26px, 26px);}
+.sprite-29 {.stitches-sprite(-77px, -171px, 26px, 26px);}
+.sprite-3 {.stitches-sprite(-113px, -171px, 17px, 24px);}
+.sprite-30 {.stitches-sprite(-140px, -171px, 12px, 10px);}
+.sprite-31 {.stitches-sprite(-215px, -5px, 46px, 38px);}
+.sprite-32 {.stitches-sprite(-215px, -53px, 20px, 20px);}
+.sprite-4 {.stitches-sprite(-245px, -53px, 16px, 12px);}
+.sprite-5 {.stitches-sprite(-245px, -75px, 11px, 14px);}
+.sprite-6 {.stitches-sprite(-215px, -99px, 9px, 27px);}
+.sprite-7 {.stitches-sprite(-27px, -83px, 70px, 13px);}
+.sprite-8 {.stitches-sprite(-212px, -136px, 40px, 40px);}
+.sprite-9 {.stitches-sprite(-162px, -186px, 35px, 40px);}
 
 /* ==========================================================================
    Author's custom styles
@@ -1350,6 +1352,35 @@ h4 {
             font-size: 10pt;
             margin: 0;
             color: #669900;
+        }
+
+        .tab-content {
+            margin: 7px 0 0 0;
+
+            .tab-pane {
+                position: relative;
+
+
+                .img-block {
+                    position: relative;
+                    overflow: hidden;
+                    width: 380px;
+                    height: 475px;
+
+                    img {
+                        display: block;
+                        width: 100%;
+                    }
+
+                    a {
+                        .sprite;
+                        .sprite-31;
+                        position: absolute;
+                        right: 13px;
+                        bottom: 8px;
+                    }
+                }
+            }
         }
     }
 
