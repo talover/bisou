@@ -1356,15 +1356,22 @@ h4 {
 
         .tab-content {
             margin: 7px 0 0 0;
+            position: relative;
+
+            .new_ico {
+                position: absolute;
+                right: -11px;
+                top: 22px;
+                z-index: 100;
+            }
 
             .tab-pane {
                 position: relative;
 
-
                 .img-block {
                     position: relative;
                     overflow: hidden;
-                    width: 380px;
+                    width: 100%;
                     height: 475px;
 
                     img {
@@ -1382,6 +1389,90 @@ h4 {
                 }
             }
         }
+
+        .nav-tabs {
+            border: 0;
+            margin: 20px 0 0 0;
+
+            li {
+                width: 25%;
+                margin: 0;
+                text-align: center;
+                position: relative;
+
+                &.active ,&:hover {
+                    a {
+                        background: none;
+
+                        &:after {
+                            -webkit-box-shadow: inset 0px 0px 0px 2px #fc3938;
+                            -moz-box-shadow:    inset 0px 0px 0px 2px #fc3938;
+                            box-shadow:         inset 0px 0px 0px 2px #fc3938;
+                        }
+                    }
+                }
+
+                &:first-child {
+                    a {
+                        float: left;
+                    }
+                }
+
+                &:first-child + * {
+                    a {
+                        margin: 0 0 0 4px;
+                    }
+                }
+
+                &:first-child + * + *{
+                    a {
+                        margin: 0 0 0 8px;
+                    }
+                }
+
+                &:last-child {
+                    a {
+                        float: right;
+                    }
+                }
+
+                a {
+                    padding: 0;
+                    border-radius:0;
+                    border: 0;
+                    width: 80px;
+                    height: 80px;
+
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        -webkit-box-shadow: inset 0px 0px 0px 2px rgba(50, 50, 50, 0);
+                        -moz-box-shadow:    inset 0px 0px 0px 2px rgba(50, 50, 50, 0);
+                        box-shadow:         inset 0px 0px 0px 2px rgba(50, 50, 50, 0);
+                        left: 0;
+                        top: 0;
+                        .transition(0.5s,all);
+                    }
+                }
+            }
+        }
     }
 
 }// END .product
+
+
+.new_ico {
+    background: #fc3938;
+    .border-radius(100%);
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    font-family: 'kelson_sans_bold';
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 10pt;
+}
