@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
-	
 	$('.form_styler').styler();
+
 	$(".fancybox-thumb").fancybox();
 
 	$('.selectpicker').selectpicker();
@@ -37,5 +37,6 @@ $(document).ready(function() {
 			$(this).parents('tr').find('.row-form').toggleClass('active').find('input[type="text"]').val("1");
 		}
 	});
+
 
 });
