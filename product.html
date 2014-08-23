@@ -199,6 +199,7 @@
 
 							</div>
 						</div>
+
 						<div class="row">
 							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 more-products">
 								<h3>
@@ -521,33 +522,286 @@
 		</div>
 
 		<div class="modal fade" id="basket" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-			<div class="modal-dialog">
+			<div class="modal-dialog modal-lg">
 				<div class="modal-content">
 					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-						<h4 class="modal-title" id="myModalLabel">Название модали</h4>
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i></i></button>
+						<h2>Ваша корзина</h2>
+						<p>
+							Заказы принимаются и обрабатываются в будние с 9.00 утра до 20.00 вечера. В случае оформления заказа в более ранее, позднее время или в выходные, менеджер свяжется с вами на следующий рабочий день.
+						</p>
 					</div>
 					<div class="modal-body">
-						...
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
-						<button type="button" class="btn btn-primary">Сохранить изменения</button>
+						<table class="busket-table">
+							<thead>
+								<tr>
+									<th></th>
+									<th class="name">Название</th>
+									<th>Артикул</th>
+									<th>Цена за шт.</th>
+									<th>Размер</th>
+									<th>Кол-во</th>
+									<th>Общая сумма</th>
+									<th></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										<div class="img-block">
+											<img src="img/pic_9.png" alt="">
+										</div>
+									</td>
+									<td>
+										<a href="#">
+											Красные черевички LOUIS VUITTON «Розовый закат»
+										</a>
+									</td>
+									<td>
+										17 522
+									</td>
+									<td>
+										125,20 грн.
+									</td>
+									<td>
+										<ul>
+											<li>S</li>
+											<li>M</li>
+											<li>L</li>
+										</ul>
+									</td>
+									<td>
+										<ul>
+											<li>
+												<div class="row-form">
+													<input type="text" value="1" />
+													<a class="up" href="javascript:void(0)"></a>
+													<a class="down" href="javascript:void(0)"></a>
+												</div>
+											</li>
+
+											<li>
+												<div class="row-form">
+													<input type="text" value="1" />
+													<a class="up" href="javascript:void(0)"></a>
+													<a class="down" href="javascript:void(0)"></a>
+												</div>
+											</li>
+
+											<li>
+												<div class="row-form">
+													<input type="text" value="1" />
+													<a class="up" href="javascript:void(0)"></a>
+													<a class="down" href="javascript:void(0)"></a>
+												</div>
+											</li>
+										</ul>
+									</td>
+									<td class="sum">
+										1750,23 грн.
+									</td>
+									<td>
+										<button class="remove"></button>
+									</td>
+								</tr>
+
+								<tr>
+									<td>
+										<div class="img-block">
+											<img src="img/pic_9.png" alt="">
+										</div>
+									</td>
+									<td>
+										<a href="#">
+											Красные черевички LOUIS VUITTON «Розовый закат»
+										</a>
+									</td>
+									<td>
+										17 522
+									</td>
+									<td>
+										125,20 грн.
+									</td>
+									<td>
+										<ul>
+											<li>S</li>
+											<li>M</li>
+											<li>L</li>
+										</ul>
+									</td>
+									<td>
+										<ul>
+											<li>
+												<div class="row-form">
+													<input type="text" value="1" />
+													<a class="up" href="javascript:void(0)"></a>
+													<a class="down" href="javascript:void(0)"></a>
+												</div>
+											</li>
+
+											<li>
+												<div class="row-form">
+													<input type="text" value="1" />
+													<a class="up" href="javascript:void(0)"></a>
+													<a class="down" href="javascript:void(0)"></a>
+												</div>
+											</li>
+
+											<li>
+												<div class="row-form">
+													<input type="text" value="1" />
+													<a class="up" href="javascript:void(0)"></a>
+													<a class="down" href="javascript:void(0)"></a>
+												</div>
+											</li>
+										</ul>
+									</td>
+									<td class="sum">
+										1750,23 грн.
+									</td>
+									<td>
+										<button class="remove"></button>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<div class="row">
+							<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+								<a class="continue-shopping" href="catalogue.html">Продолжить покупки</a>
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 country">
+								<select class="select">
+									<option>Выберите страну</option>
+									<option>Выберите страну</option>
+									<option>Выберите страну</option>
+									<option>Выберите страну</option>
+								</select>
+								<p>Минимальный заказ для Украины – 3 единицы</p>
+							</div>
+
+							<div class='col-lg-5 col-md-5 col-sm-5 col-xs-5 total'>
+								<p>Итого к оплате: 2 830,55 грн.</p>
+								<button class="red-btn">Оформить заказ</button>
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 more-products">
+								<h3>
+									хиты продаж
+								</h3>
+								<div id="bestsellers" class="carousel slide" data-ride="carousel">
+									<!-- Wrapper for slides -->
+									<div class="carousel-inner">
+										<div class="item active">
+											<ul class="clearfix">
+												<li>
+													<a href="#">
+														<span class="img_block">
+															<img src="img/pic_11.png" alt="">
+														</span>
+														<p>Туфли на каблуках 10 см. Модный хит!</p>
+														<span class="price">285 грн.</span>
+													</a>
+												</li>
+
+												<li>
+													<a href="#">
+														<span class="img_block">
+															<img src="img/pic_12.png" alt="">
+														</span>
+														<p>Джемпер женский</p>
+														<span class="price">485 грн.</span>
+													</a>
+												</li>
+
+												<li>
+													<a href="#">
+														<span class="img_block">
+															<img src="img/pic_13.png" alt="">
+														</span>
+														<p>Джемпер женский</p>
+														<span class="price">485 грн.</span>
+													</a>
+												</li>
+
+												<li>
+													<a href="#">
+														<span class="img_block">
+															<img src="img/pic_13.png" alt="">
+														</span>
+														<p>Джемпер женский</p>
+														<span class="price">485 грн.</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+										<div class="item">
+											<ul class="clearfix">
+												<li>
+													<a href="#">
+														<span class="img_block">
+															<img src="img/pic_11.png" alt="">
+														</span>
+														<p>Туфли на каблуках 10 см. Модный хит!</p>
+														<span class="price">285 грн.</span>
+													</a>
+												</li>
+
+												<li>
+													<a href="#">
+														<span class="img_block">
+															<img src="img/pic_13.png" alt="">
+														</span>
+														<p>Джемпер женский</p>
+														<span class="price">485 грн.</span>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<span class="img_block">
+															<img src="img/pic_12.png" alt="">
+														</span>
+														<p>Джемпер женский</p>
+														<span class="price">485 грн.</span>
+													</a>
+												</li>
+
+												<li>
+													<a href="#">
+														<span class="img_block">
+															<img src="img/pic_13.png" alt="">
+														</span>
+														<p>Джемпер женский</p>
+														<span class="price">485 грн.</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</div>
+
+									<!-- Controls -->
+									<a class="left carousel-control" href="#bestsellers" role="button" data-slide="prev"></a>
+									<a class="right carousel-control" href="#bestsellers" role="button" data-slide="next"></a>
+								</div>
+							</div><!--END .more_products-->
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 
 
-		<div class="modal fade bs-example-modal-l" id="size" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-			<div class="modal-dialog">
+		<div class="modal fade" id="size" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
 				<div class="modal-content">
 					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-						<h4 class="modal-title" id="myModalLabel">Таблица размеров</h4>
+						<button type="button" class="close" data-dismiss="modal"><i></i></button>
+						<h2>Таблица размеров</h2>
 					</div>
 					<div class="modal-body">
-						<table>
+						<table class="table-size">
 							<thead>
 								<tr>
 									<th>Международный</th>
@@ -606,10 +860,6 @@
 								</tr>
 							</tbody>
 						</table>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-						<button type="button" class="btn btn-primary">Save changes</button>
 					</div>
 				</div>
 			</div>

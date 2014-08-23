@@ -1,8 +1,6 @@
 $(document).ready(function() {
 
-	$('.form_styler').styler();
-
-	$(".fancybox-thumb").fancybox();
+	$('.select , input').styler();
 
 	$('.selectpicker').selectpicker();
 
@@ -12,13 +10,13 @@ $(document).ready(function() {
 
 	/*--size--*/
 
-	$(".size").on('click','a.up',function(){
+	$(".size, .busket-table").on('click','a.up',function(){
 		var size = $(this).parent().find('input[type="text"]').val();
 
 		$(this).parent().find('input[type="text"]').val(parseInt(size) + 1);
 	});
 
-	$(".size").on('click','a.down',function(){
+	$(".size, .busket-table").on('click','a.down',function(){
 		var size = $(this).parent().find('input[type="text"]').val();
 
 		if(1 < size){
@@ -27,7 +25,7 @@ $(document).ready(function() {
 	});
 
 	$('.size-btn').click(function(){
-		var num = $('.row-form:visible').size();
+		var num = $('.size .row-form:visible').size();
 
 		if (2 > num) {
 			$(this).addClass('active');

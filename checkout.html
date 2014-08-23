@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>bisou</title>
+		<meta name="description" content="">
+		<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+		
+		<link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+		<!-- <link rel="stylesheet" href="css/main.css"> -->
+
+		<link rel="stylesheet/less" type="text/css" href="css/main.less">
+		<script src="js/vendor/less.js" type="text/javascript"></script>
+		<!--[if lt IE 9]>
+			<script src="js/vendor/html5-3.6-respond-1.1.0.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<!--[if lt IE 7]>
+			<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+		<!--[if gte IE 9]>
+			<style type="text/css">
+				.gradient {
+					filter: none;
+				}
+			</style>
+		<![endif]-->
+
+		<div id="main">
+			<header id="header">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-9 col-sm-9 col-xs-9">
+							<div class="info-block">
+								<ul>
+									<li>+38 (067) 840 33 44</li>
+									<li>+38 (050) 840 33 44</li>
+									<li>+38 (050) 840 33 44</li>
+								</ul>
+
+								<button class="call-back" data-toggle="modal" data-target="#call-back"><i></i><span>Обратный звонок</span></button>
+
+								<div class='currency'>
+									<select class="selectpicker">
+										<option title="<img src='img/language/ua.png'/><span class='text'>uan</span>">uan</option>
+										<option title="<img src='img/language/ru.png'/><span class='text'>ru</span>">ru</option>
+									</select>
+								</div>
+							</div><!--END .info-block-->
+							<a id="logo" href="index.html"></a>
+							<h1>Оптовый интернет-магазин женской одежды от производителя</h1>
+
+							<nav>
+								<ul>
+									<li class="active"><a href="#">Каталог</a></li>
+									<li><a href="#">О нас</a></li>
+									<li><a href="#">Доставка и оплата</a></li>
+									<li><a href="#">Вопросы и ответы</a></li>
+									<li><a href="#">Новости</a></li>
+									<li><a href="#">Контакты</a></li>
+								</ul>
+							</nav>
+						</div>
+						<div class="col-md-3 col-sm-3 col-xs-3">
+							<p class="busket">
+								<i></i>
+								<a href="#">5 товаров</a>
+								<span>на 1700 грн</span>
+							</p>
+
+							<form class="search clearfix">
+								<button type="submit"></button>
+
+								<div class="row">
+									<input type="text" placeholder="Поиск товара" onfocus="this.placeholder=''" onblur="this.placeholder='Поиск товара'" />
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</header><!--END #header-->
+
+			<div class="bread-crumb">
+				<div class="container">
+					<ul>
+						<li class="home"><a href="index.html"><i></i></a></li>
+						<li class="arrow"><i></i></li>
+						<li><a href="#">Каталог</a></li>
+						<li class="arrow"><i></i></li>
+						<li><a href="#">Платья Bisou</a></li>
+						<li class="arrow"><i></i></li>
+						<li><span>Платья Coral 12</span></li>
+					</ul>
+				</div>
+			</div><!--END .bread-crumb-->
+
+			<div class="container order-block">
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<h2>Оформление заказа</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 left-block">
+						<h4>Контактная информация</h4>
+
+						<form>
+
+							<div class="row">
+								<div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
+									<label for="name">ФИО</label>
+									<input id="name" type="text" />
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
+									<label for="country">Ваша страна</label>
+									<select id="country" class="select">
+										<option></option>
+										<option>Україна</option>
+										<option>Україна</option>
+										<option>Україна</option>
+										<option>Україна</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
+									<label for="adress">Адрес доставки</label>
+									<input id="adress" type="text" />
+								</div>
+								<div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 hint">
+									<p>Вида: г. Одесса, ул. Пушкинская, 15, кв.43</p>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
+									<label for="tel">Контактный телефон</label>
+									<input id="tel" type="text" />
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
+									<label for="mail">Электронная почта</label>
+									<input id="mail" type="text" />
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+									<h4>Способ доставки</h4>
+
+									<ul class="list-check">
+										<li>
+											<input id="radio-1" type="radio" name="radio-1" checked/>
+											<label for="radio-1">Самовывоз из офиса магазина</label>
+										</li>
+										<li>
+											<input id="radio-2" type="radio" name="radio-1" />
+											<label for="radio-2">Новой почтой</label>
+										</li>
+										<li>
+											<input id="radio-3" type="radio" name="radio-1" />
+											<label for="radio-3">Автолюкс, Интайм</label>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+									<h4>Выберите способ оплаты</h4>
+
+									<ul class="list-check">
+										<li>
+											<input id="radio-2-1" type="radio" name="radio-2" checked/>
+											<label for="radio-2-1">Наличными при получении</label>
+										</li>
+										<li>
+											<input id="radio-2-2" type="radio" name="radio-2" />
+											<label for="radio-2-2">Безналичный расчет на карту приватбанка(предоплата 100%)</label>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+									<p class="agreement">
+										Совершая заказ, вы соглашаетесь с <a href="" data-toggle="modal" data-target="#agreement">пользовательским соглашением </a>
+									</p>
+
+									<ul class="list-check">
+										<li>
+											<input id="check-1" type="checkbox" />
+											<label for="check-1">Использовать мои данные при оформлении заказ как регистрационны</label>
+										</li>
+									</ul>
+
+									<button class="red-btn">Оформить заказ</button>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 order-content">
+						<div>
+							<h4>Содержимое заказа</h4>
+
+							<ul class="order-list">
+								<li>
+									<div class="img-block">
+										<img src="img/pic_14.png" alt="">
+									</div>
+									<ul>
+										<li><a href="#">Красные черевички LOUISVUITTON</a></li>
+										<li><span>125,20 грн.</span></li>
+										<li>S — 5 шт.</li>
+										<li>M — 2 шт.</li>
+										<li>L — 1 шт.</li>
+									</ul>
+								</li>
+
+								<li>
+									<div class="img-block">
+										<img src="img/pic_14.png" alt="">
+									</div>
+									<ul>
+										<li><a href="#">«Розовый закат»</a></li>
+										<li><span>125,20 грн.</span></li>
+										<li>M — 2 шт.</li>
+										<li>L — 1 шт.</li>
+									</ul>
+								</li>
+
+								<li>
+									<div class="img-block">
+										<img src="img/pic_14.png" alt="">
+									</div>
+									<ul>
+										<li><a href="#">Красные черевички LOUISVUITTON «Розовый закат»</a></li>
+										<li><span>125,20 грн.</span></li>
+										<li>S — 5 шт.</li>
+									</ul>
+								</li>
+							</ul>
+
+							<p>Цена доставки: 75 грн.</p>
+							<p class="sum">Итого к оплате: 3 575 грн.</p>
+						</div>
+					</div>
+				</div>
+			</div><!--END .order-block-->
+
+			<div class="container">
+				<div class="alert success-alert fade in">
+					<h2>Спасибо, ваш заказ принят!</h2>
+					<p>
+						Ваш заказ №121 успешно принят к рассмотрению. Наш менеджер свяжется с вами в ближайшее время. <br/>
+						Спасибо, что совершаете покупки на нашем сайте. <br/>
+						Перед отправкой товара мы всегда проверяем его комплектации и целостность. 
+					</p>
+					<button type="button" class="close" data-dismiss="alert">Закрыть окно</button>
+				</div>
+			</div>
+
+		</div>
+
+		<footer id="site-footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2 col-sm-2 col-xs-2">
+						<h4>Покупателям</h4>
+						<ul>
+							<li><a href="">Таблица размеров</a></li>
+							<li><a href="">Доставка и оплата</a></li>
+							<li><a href="">Условия возврата</a></li>
+							<li><a href="">Как сделать заказ</a></li>
+							<li><a href="">Вопросы и ответы</a></li>
+						</ul>
+					</div><!--.col-md-2-->
+					<div class="col-md-2 col-sm-2 col-xs-2">
+						<h4>О магазине</h4>
+						<ul>
+							<li><a href="">О нас</a></li>
+							<li><a href="">Наше производство</a></li>
+							<li><a href="">Новости</a></li>
+						</ul>
+						<h4>Партнерам</h4>
+						<ul>
+							<li><a href="">Сотрудничество</a></li>
+						</ul>
+					</div><!--.col-md-2-->
+					<div class="col-md-2 col-sm-2 col-xs-2">
+						<h4>Контакты</h4>
+						<address>
+							<span><a href="">info@bisou.com.ua</a></span>
+							<span>+38 (067) 840 33 44</span>
+							<span>+38 (067) 840 33 44</span>
+							<span>+38 (067) 840 33 44</span>
+						</address>
+						<ul>
+						</ul>
+						<div class="socials">
+							<li class="fb"><a href="#"><i></i></a></li>
+							<li class="vk"><a href="#"><i></i></a></li>
+							<li class="tw"><a href="#"><i></i></a></li>
+							<li class="ph"><a href="#"><i></i></a></li>
+						</div>
+					</div><!--.col-md-2-->
+					<div class="col-md-4 col-sm-4 col-xs-4 pull-right">
+						<p class="copyright">© Женская одежда Bisou , 2014</p>
+						<p>В наших магазинах всегда представлен широкий ассортимент платьев, кофт, блузок, а также жакетов и деловых костюмов, которые разнообразят ваш гардероб. Если вам нужен менее строгий и менее классический стиль, рекомендуем  мягкий трикотаж, к которому юбки или брюки предлагаются отдельно от костюма. </p>
+					</div><!--.col-md-4-->
+				</div><!--.row-->
+				<div class="row">
+					<div class="col-md-3 col-sm-3 col-xs-3">
+						<p class="copyright">Создание сайта - <a href="">NextWeb</a></p>
+					</div>
+				</div><!--.row-->
+			</div><!--.container-->
+		</footer>
+		
+		<!-- Modal -->
+
+		<div class="modal fade" id="call-back" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h4 class="modal-title" id="myModalLabel">Название модали</h4>
+					</div>
+					<div class="modal-body">
+						...
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+						<button type="button" class="btn btn-primary">Сохранить изменения</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Modal -->
+		<div class="modal fade" id="agreement" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-lg">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+						<h4 class="modal-title" id="myModalLabel">Modal title</h4>
+					</div>
+					<div class="modal-body">
+						...
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Save changes</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+
+		<script src="js/vendor/bootstrap-select.min.js"></script>
+		<script src="js/vendor/bootstrap.min.js"></script>
+		<script src="js/vendor/jquery.fancybox.js"></script>
+		<script src="js/vendor/jquery.formstyler.min.js"></script>
+		<script src="js/vendor/social-likes.min.js"></script>
+
+		<script src="js/main.js"></script>
+
+		<script type="text/javascript">
+			$(window).on('load', function () {
+				$(".fancybox-thumb").fancybox();
+			});
+		</script>
+	</body>
+</html>
