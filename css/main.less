@@ -645,6 +645,7 @@ h5 {
 		.carousel-inner {
 			.item {
 				opacity: 0;
+				filter:alpha(opacity=0);
 				.transition(0.5s,all);
 				background-position: center;
 				background-size: cover;
@@ -670,7 +671,8 @@ h5 {
 					.box-sizing(border-box);
 					text-align: center;
 					text-transform: uppercase;
-					opacity: 0;
+					// opacity: 0;
+					// filter:alpha(opacity=0);
 
 					p {
 						line-height: 1;
@@ -700,13 +702,15 @@ h5 {
 			}
 
 			.active {
-			opacity: 1;
+				opacity: 1;
+				filter:alpha(opacity=100);
 			}
 
 			.active.left,
 			.active.right {
 				left: 0;
 				opacity: 0;
+				filter:alpha(opacity=0);
 				z-index: 1;
 			}
 		}
