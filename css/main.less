@@ -236,7 +236,7 @@ a,button,input {outline: 0;}
 }
 
 h1 {
-	font-size: 23pt;
+	font-size: 31pt;
 	color: #000;
 }
 
@@ -246,6 +246,7 @@ h2 {
     font-family: 'kelson_sans_regular';
     font-weight: normal;
     margin: 0;
+    padding-bottom: 10px;
 }
 
 h4 {
@@ -1098,10 +1099,14 @@ h5 {
 
 	h4 {
 		color: #fff;
-        text-transform: uppercase;
-        font-size: 14pt;
-        line-height: 1em;
-        padding-top: .8em;
+		text-transform: uppercase;
+		font-size: 13.5pt;
+		line-height: 1em;
+		padding-top: 13px;
+
+		&:first-child {
+			padding: 19px 0 0 0;
+		}
 	}
 
 	p {
@@ -1111,15 +1116,27 @@ h5 {
 	}
 
 	.col-md-2 {
-		margin-left: 30px;
+		margin-left: 38px;
 
 		&:first-child {
 			margin-left: 0;
 		}
+
+		&:first-child + * + * {
+			margin-left: 18px;
+		}
 	}
 
 	ul {
+		
+
+		&:first-of-type {
+			padding: 10px 0 0 0;
+		}
+
 		li {
+			padding: 0 0 3px 0;
+
 			a {
 				color: #777;
 				text-decoration: underline;
@@ -1134,7 +1151,7 @@ h5 {
 	}
 
 	address {
-		margin-bottom: .4em;
+		margin:10px 0;
 
 		a {
 			display: inline-block;
@@ -1150,11 +1167,13 @@ h5 {
 		}
 		span {
 			display: block;
-			line-height: 2em;
+			padding-bottom: 10px;
 		}
 	}
 
-	.socials {
+	ul.socials {
+		padding: 0;
+
 		li {
 			display: inline-block;
 			margin: 0 .1em;
@@ -1249,20 +1268,27 @@ h5 {
 	}
 
 	.col-md-4.pull-right {
-		padding-top: .8em;
+		padding: 10px 0 0 28px;
 	}
 
-	.copyright {
+	.copyright , .creators{
 		margin-top: 10px;
-		font-size: 11pt;
+		font-size: 10.5pt;
 		color: #fff;
+
 		a {
 			color: #fff;
 			text-decoration: underline;
+			.transition(0.5s,all);
+
 			&:hover {
-				text-decoration: none;
+				color: #fc3938;
 			}
 		}
+	}
+
+	.creators {
+		margin: -12px 0 0 0;
 	}
 } //* END #footer
 
@@ -1960,8 +1986,9 @@ h5 {
         	padding:6px 0 8px 0;
         	font-size: 10.5pt;
 
-			.select {
+			.jq-selectbox {
 				margin: -3px 0 3px 5px;
+				z-index: 200!important;
 			}
 		}
 	}
@@ -1983,6 +2010,7 @@ h5 {
 		a {
 			text-decoration: underline;
 			color: #000;
+			.transition(0.5s,all);
 
 			&:hover {
 				text-decoration: none;
